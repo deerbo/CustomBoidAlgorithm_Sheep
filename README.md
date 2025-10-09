@@ -1,1 +1,1 @@
-# IMDM327-Boids
+Sheep flocking boids game/medidate thingy
