@@ -12,6 +12,8 @@ public class NewBehaviourScript : MonoBehaviour
     public GameObject boid_prefab;
     public GameObject dog_prefab;
 
+    private Animator dogAnimator;
+
     private Vector3 dog_pos = new Vector3(10, 0, 0);
 
     private GameObject dog;
@@ -23,6 +25,8 @@ public class NewBehaviourScript : MonoBehaviour
     void Start()
     {
         dog = Instantiate(dog_prefab, new Vector3(10, 0, 0), Quaternion.identity);
+        dogAnimator = dog.GetComponent<Animator>();
+        
 
         //initalize objects and positions positions
         bp = new BodyProperty[numberOfBoids];
@@ -165,6 +169,12 @@ public class NewBehaviourScript : MonoBehaviour
                 Quaternion.LookRotation(move),
                 10f * Time.deltaTime
             );
+        }
+
+        if (dogAnimator != null)
+        {
+            float currentSpeed = new Vector3(moveX, 0, moveZ).magnitude;
+            dogAnimator.SetFloat("Speed", currentSpeed);
         }
     }
 
