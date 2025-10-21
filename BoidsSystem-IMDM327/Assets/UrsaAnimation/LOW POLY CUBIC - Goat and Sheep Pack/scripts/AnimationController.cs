@@ -21,38 +21,39 @@ namespace Ursaanimation.CubicFarmAnimals
 
         void Update()
         {
-            if (Input.GetKeyDown(KeyCode.W))
-            {
-                animator.Play(walkForwardAnimation);
-            }
-            else if (Input.GetKeyDown(KeyCode.S))
-            {
-                animator.Play(walkBackwardAnimation);
-            }
-            else if (Input.GetKeyDown(KeyCode.Alpha1))
-            {
-                animator.Play(runForwardAnimation);
-            }
-            else if (Input.GetKeyDown(KeyCode.A))
-            {
-                animator.Play(turn90LAnimation);
-            }
-            else if (Input.GetKeyDown(KeyCode.D))
-            {
-                animator.Play(turn90RAnimation);
-            }
-            else if (Input.GetKeyDown(KeyCode.Alpha2))
-            {
-                animator.Play(trotAnimation);
-            }
-            else if (Input.GetKeyDown(KeyCode.Alpha4))
-            {
-                animator.Play(sittostandAnimation);
-            }
-            else if (Input.GetKeyDown(KeyCode.Alpha3))
-            {
-                animator.Play(standtositAnimation);
-            }
+            animator.Play(walkForwardAnimation);
+            // if (Input.GetKeyDown(KeyCode.W))
+            // {
+            //     animator.Play(walkForwardAnimation);
+            // }
+            // else if (Input.GetKeyDown(KeyCode.S))
+            // {
+            //     animator.Play(walkBackwardAnimation);
+            // }
+            // else if (Input.GetKeyDown(KeyCode.Alpha1))
+            // {
+            //     animator.Play(runForwardAnimation);
+            // }
+            // else if (Input.GetKeyDown(KeyCode.A))
+            // {
+            //     animator.Play(turn90LAnimation);
+            // }
+            // else if (Input.GetKeyDown(KeyCode.D))
+            // {
+            //     animator.Play(turn90RAnimation);
+            // }
+            // else if (Input.GetKeyDown(KeyCode.Alpha2))
+            // {
+            //     animator.Play(trotAnimation);
+            // }
+            // else if (Input.GetKeyDown(KeyCode.Alpha4))
+            // {
+            //     animator.Play(sittostandAnimation);
+            // }
+            // else if (Input.GetKeyDown(KeyCode.Alpha3))
+            // {
+            //     animator.Play(standtositAnimation);
+            // }
         }
     }
 }

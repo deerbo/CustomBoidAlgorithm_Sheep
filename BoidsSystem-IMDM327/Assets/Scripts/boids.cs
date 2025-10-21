@@ -92,7 +92,7 @@ public class NewBehaviourScript : MonoBehaviour
         center = center / (numberOfBoids - 1);
 
         // move 1% of the way to the center of mass of all the boids
-        return (center - bp[j].position) / 100;
+        return (center - bp[j].position) / 70;
     }
 
     // if the boids get too close to each other, redirect them away
@@ -160,7 +160,8 @@ public class NewBehaviourScript : MonoBehaviour
 
         Vector3 move = new Vector3(moveX, 0, moveZ) * speed * Time.deltaTime;
         dog.transform.position += move;
-        dog_pos += move;
+        // dog_pos += move;
+        dog_pos = dog.transform.position;
 
         if (move != Vector3.zero)
         {
