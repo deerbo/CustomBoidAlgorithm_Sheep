@@ -67,7 +67,7 @@ public class NewBehaviourScript : MonoBehaviour
 
             LimitVelocity(i);
             ScaryDog(i);
-
+            
             // update position both physically and in body property
             boids[i].transform.position += bp[i].velocity * dt;
             bp[i].position += bp[i].velocity * dt;
