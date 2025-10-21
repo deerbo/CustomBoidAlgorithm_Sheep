@@ -33,7 +33,7 @@ public class NewBehaviourScript : MonoBehaviour
         boids = new GameObject[numberOfBoids];
         for (int i = 0; i < numberOfBoids; i++)
         {
-            float r = Random.Range(1, numberOfBoids);
+            float r = Random.Range(10, numberOfBoids);
             float angle = i * Mathf.PI * 2 / numberOfBoids;
             Vector3 pos = new Vector3(Mathf.Cos(angle) * r, 0, Mathf.Sin(angle) * r);
             GameObject b = Instantiate(boid_prefab, pos, Quaternion.identity);
@@ -67,7 +67,7 @@ public class NewBehaviourScript : MonoBehaviour
 
             LimitVelocity(i);
             ScaryDog(i);
-            
+
             // update position both physically and in body property
             boids[i].transform.position += bp[i].velocity * dt;
             bp[i].position += bp[i].velocity * dt;
