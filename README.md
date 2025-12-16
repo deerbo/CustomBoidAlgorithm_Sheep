@@ -1,4 +1,4 @@
-Sheep flocking boids
+Sheep flocking boids. User manipulates a dog prefab using WASD, and the sheep run away from the dog and than flock back together.
 
 
 https://github.com/user-attachments/assets/ee52d5db-329e-4499-99f9-8f929882b92d
